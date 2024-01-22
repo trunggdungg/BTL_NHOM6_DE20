@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Phần header */
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: aqua;
+    z-index: 1;
+}
+
+/* text quản lý sinh viên */
+#header .text-header h1 {
+
+    max-width: 350px;
+    line-height: 70px;
+    margin-left: 25px;
+}
+
+/* nút login */
+#header .btn-login {
+    position: absolute;
+    height: 50px;
+    right: 0;
+    width: 95px;
+    top: 0;
+    background-color: aquamarine;
+    border-radius: 70px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+#header .btn-login:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/* phần menu */
+
+#menu {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 841px;
+    /* background-color: black; */
+    width: 400px;
+    border: 1px solid aquamarine;
+}
+
+
+#nav>li {
+    height: 70px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 30px;
+ 
+    line-height: 70px;
+    border-top: 1px solid aquamarine;
+    border-bottom: 1px solid aquamarine;
+
+}
+
+
+#nav>li a {
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+
+#nav>li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+
+#form {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 841px;
+    top: 70px;
+    left: 400px;
+}
+
+/* border bảng */
+.table,th,td{
+    border: 1px solid #000;
+     border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+  
+}
+
+table{
+    width: 100%; 
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+
+.add_khoa label,
+.add_khoa input {
+    display: block;
+    margin-bottom: 10px; /* Tạo khoảng cách giữa các dòng */
+  
+}

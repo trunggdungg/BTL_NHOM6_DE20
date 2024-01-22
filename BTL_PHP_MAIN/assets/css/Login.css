@@ -1,0 +1,132 @@
+*
+{
+    padding : 0;
+    margin : 0;
+    box-sizing:border-box ;
+}
+header{
+    position: fixed;
+    top : 0;
+    left : 0;
+    width: 100%;
+    padding : 20px 100px;
+    display : flex;
+    justify-content: space-between;/*dinh nghia vi tri cha la logo dung truoc, ben canh la con # dung ben kia man hinh */
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+   
+    font-size: 30px;
+    color : #fff;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: url('anh/anhlogin.jpg') no-repeat; */
+    background-color:rgb(117, 66, 66);
+    background-size: cover; 
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height : 440px;
+    background:transparent ;
+    border : 2px solid grey;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px grey; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.wrapper .form-box
+{
+    width: 100%;
+    padding :40px
+}
+
+.wrapper .form-box.login{
+    /* display:none; */
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.form-box h2{
+    font-size: 35px;
+    text-align: center;
+    color : #162938;
+    padding-bottom: 20px;
+}
+
+.input-box{
+    position: relative;
+    font-size: 20px;
+    width: 100%;
+    height :40px;
+    border-bottom: 2px solid black;
+    margin : 20px 0;
+}
+
+.input-box label{
+    position:absolute;
+    top : 40%;
+    left : 5px;
+    transform: rotateY(-50%);
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.input-box input {
+    width: 100%;
+    height :100%;
+    background: transparent;
+    border : none;
+    font-size: 20px;    
+    outline: none;
+    font-weight: 500;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label
+{
+    top : -13px;
+}
+
+.forgot {
+    font-size: 15px;
+    font-weight: 500; 
+    margin : -5px 0px 15px;   
+    display : flex;
+    justify-content: space-between;
+}
+
+.forgot a{
+    text-decoration: none;
+    color : rgb(125, 48, 198);
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+
+.submit{
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    color : white;
+    font-weight: 500;
+    border : none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    cursor : pointer;
+    background-color :rgb(67, 8, 131)
+}
